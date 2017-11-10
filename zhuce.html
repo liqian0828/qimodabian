@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/zhuce.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-3.2.1.js"></script>
+<script>
+	$(document).ready(function(e) {
+        
+		var usenamebool=false;
+		var passwordbool=false;
+		var repasswordbool=false;
+		var emailbool=false;
+		var phonebool=false;
+		
+		$('#username').keyup(function(e) {
+            var val=$('#username').val();
+			if(val.length<4||val.length>16){
+				$('#usernamets').html('必须大于4个字符小雨16个字符');
+				usenamebool=false;
+			}else{
+				var reg = new RegExp("[\\u4E00-\\u9FFF]+","g");
+				　if(reg.test(val)){
+					$('#usernamets').html('用户名必须是字母')
+					usenamebool=false;
+					}else{$('#usernamets').html('用户名可以哦');
+					usenamebool=true;
+				     }
+				
+			}
+				
+				
+        });
+		$('#password').keyup(function(e) {
+			var val=$('#password').val();
+			var rval=$('#repassword').val();
+			if(val.length<6||val.length>16){
+				$('#passwordts').html('必须大于6个字符小雨16个字符');
+				passwordbool=false;
+			}else{
+				if(val.length<10){
+				var strreg=/[a-z]/ig;
+				var numreg=/[0-9]/;
+				if(strreg.test(val)&&numreg.test(val)){
+					$('#passwordts').html('密码强度：中');
+				}else{
+					$('#passwordts').html('密码强度：弱');
+				}
+				}else{
+					var strreg=/[a-z]/ig;
+				var numreg=/[0-9]/;
+				if(strreg.test(val)&&numreg.test(val)){
+					$('#passwordts').html('密码强度：强');
+				}else{
+					$('#passwordts').html('密码强度：中');
+				}}
+				passwordbool=true;
+				if(val!=rval){
+					$('#repasswordts').html('两次输入密码不一致');	
+				}else{$('#repasswordts').html('密码输入正确');	
+				}
+				repasswordbool=true;
+				
+			}
+		});
+		$('#repassword').keyup(function(e) {
+			var pval=$('#password').val();
+			var rval=$('#repassword').val();
+			if(pval!=rval){
+				$('#repasswordts').html('两次输入密码不一致');	
+				repasswordbool=false;
+			}else{$('#repasswordts').html('密码输入正确');	
+			}
+			repasswordbool=true;
+		})
+		$('#email').keyup(function(e) {
+			var val=$('#email').val();	
+			var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/; 
+			if(!reg.test(val)){
+				$('#emailts').html('邮箱格式不正确');
+				emailbool=false;
+			}else{
+				$('#emailts').html('邮箱格式正确');
+				emailbool=true;
+			}	
+		})
+		$('#phone').keyup(function(e) {
+			var val=$('#phone').val();	
+			var reg = /^1[3|4|5|8][0-9]\d{4,8}$/; 
+			if(!reg.test(val)){
+				$('#phonets').html('格式不正确');
+				phonebool=false;
+			}else{
+				$('#phonets').html('格式正确');
+				phonebool=true;
+			}	
+		})
+		$('#zhuce').click(function(e) {
+			if(usenamebool&&passwordbool&&repasswordbool&&emailbool&&phonebool){
+				$('#tishi').html('注册成功')
+			}else{
+				$('#tishi').html('输入信息不完全或错误')
+			}
+		})
+    });
+</script>
+</head>
+
+<body>
+<form class="yanzheng">
+	<div class="yonghuzhuce">用户注册</div>
+    <div class="shurukuang">
+    	<div class="shuoming">用户名</div>
+        <div class="shuru"><input type="text"/  id="username" placeholder="请输入用户名" autocomplete="off"></div>
+        <div class="tishi" id="usernamets">ts</div>
+    </div>
+    <div class="shurukuang">
+    	<div class="shuoming" >密码</div>
+        <div class="shuru"><input type="password" id="password" placeholder="请输入密码" autocomplete="off"/></div>
+        <div class="tishi" id="passwordts">ts</div>
+    </div>
+    <div class="shurukuang">
+    	<div class="shuoming">确认密码</div>
+        <div class="shuru"><input type="password" id="repassword" placeholder="请确认密码" autocomplete="off"/></div>
+        <div class="tishi"  id="repasswordts">ts</div>
+    </div>
+    <div class="shurukuang">
+    	<div class="shuoming">邮箱</div>
+        <div class="shuru"><input type="text" id="email" placeholder="请输入邮箱" autocomplete="off"/></div>
+        <div class="tishi" id="emailts">ts</div>
+    </div>
+     <div class="shurukuang">
+    	<div class="shuoming">电话</div>
+        <div class="shuru"><input type="text" id="phone" placeholder="请输入电话" autocomplete="off"/></div>
+        <div class="tishi" id="phonets">ts</div>
+    </div>
+    <div class="anniu"><input type="button" id="zhuce" value="注册"/></div>
+    <div id="tishi"></div>
+    
+</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.yanzheng{
+	height:316px;
+	width:600px;
+/*	background:#9F9;*/
+	margin:auto;
+    border:1px solid black;
+}
+.yanzheng .yonghuzhuce{
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-bottom:1px solid #000;
+	color:#006;
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:20px;}
+.shurukuang{
+	height:40px;
+	margin:auto;
+	width:478px;
+/*	background:#09C;*/
+	line-height:40px;}
+.shuoming{
+	float:left;
+	width:150px;
+	text-align:right;}
+.shuru{
+	float:left;
+	margin-top:10PX;}
+.tishi{
+	float:left;
+	color:#F00;}
+.anniu{
+	text-align:center;
+	margin-top:10px;}
+	
+#tishi{
+	text-align:center;
+	color:#F00;
+	}

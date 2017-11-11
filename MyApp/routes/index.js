@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  let name = req.session.name || "";
+
+  res.render('index', { name });
 });
 
 router.get('/Ha', function(req, res, next) {

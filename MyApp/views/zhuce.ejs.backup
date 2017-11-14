@@ -17,7 +17,7 @@
 		$('#username').keyup(function(e) {
             var val=$('#username').val();
 			if(val.length<4||val.length>16){
-				$('#usernamets').html('大于4个字符小于16个字符');
+				$('#usernamets').html('必须大于4个字符小雨16个字符');
 				usenamebool=false;
 			}else{
 				var reg = new RegExp("[\\u4E00-\\u9FFF]+","g");
@@ -34,7 +34,7 @@
 			var val=$('#password').val();
 			var rval=$('#repassword').val();
 			if(val.length<6||val.length>16){
-				$('#passwordts').html('大于4个字符小于16个字符');
+				$('#passwordts').html('必须大于6个字符小雨16个字符');
 				passwordbool=false;
 			}else{
 				if(val.length<10){

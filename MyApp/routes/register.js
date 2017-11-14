@@ -3,7 +3,6 @@ var router = express.Router();
 var userService = require('../service/userService');
 
 router.get('/', function(req, res){
-    console.log('111111');
     res.sendfile(__dirname + "/zhuce.html");
 })
 

@@ -26,6 +26,86 @@ img{
     background-color: aquamarine;
     
 }
+.zhbuz{
+    height: 500px;
+    width: 932;
+    float: left;
+}
+.zhbuy{
+    height: 500px;
+    width: 272px;
+    float: right;
+    background-color: forestgreen;
+}
+.gushiph{
+    height: 290px;
+    width: 260px;
+    background-color: deepskyblue;
+    margin-left: 12px;
+    
+}
+.wangzhantj{
+    height: 166px;
+    width: 260px;
+    background-color:darkviolet;
+    margin-left: 12px; 
+}
+.zhongbu p{
+    margin-left: 12px
+}
+.zs{
+    height: 332px;
+}
+.zleft{
+    height: 332px;
+    width: 500px;
+    background-color: cornflowerblue;
+    float: left;
+    
+}
+.zright{
+    height: 332px;
+    width: 250px;
+    background-color: chartreuse;
+    float: right;
+    margin-left: 2px;
+}
+.zrs{
+    height: 165px;
+    width: 250px;
+    background-color: bisque;
+    margin-bottom: 2px;
+}
+.zrx{
+    height: 165px;
+    width: 250px;
+    background-color: fuchsia;
+    
+}
+.zx{
+    height: 166px;
+    margin-top: 2px;
+    
+}
+.zxz{
+    height: 166px;
+    width: 250px;
+    background-color: aqua;
+    float: left;
+}
+.zxc{
+    height: 166px;
+    width: 250px;
+    background-color:darkcyan;
+    float: left;
+}
+.zxy{
+    height: 166px;
+    width: 250px;
+    background-color:firebrick;
+    float: right;
+    margin-left: 2px;
+}
 .dibu{
     height: 130px;
     width: 1024px;

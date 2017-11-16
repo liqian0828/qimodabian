@@ -10,7 +10,7 @@ img{
 .dakuang{
     height: 780px;
     width: 1024px;
-    
+    background-color: #f5f4f7;
     margin: 0px auto;
     
 }
@@ -23,9 +23,58 @@ img{
 .zhongbu{
     height: 500px;
     width: 1024px;
-    background-color: aquamarine;
+/*    background-color: aquamarine;*/
     
 }
+.zhongbu1{
+    height: 630px;
+    width: 1024px;
+}
+.tupianliebiao{
+			width:1024px;
+			height:630px;
+/*			background:#093;*/
+			margin:auto;}
+.tupianliebiao li{
+			width:240px;
+			height:300px;
+/*			background:#09F;*/
+			float:left;
+			border:3px solid #FFF;
+			margin:5px;}
+.tupianliebiao li:hover{
+	border:3px solid #000;
+	}
+.tupianliebiao li .tupian{
+	width:240px;
+	height:240px;
+/*	background:#930;*/
+	}
+.tupianliebiao li .biaoti{
+	
+	height:40px;
+/*	background:#96C;*/
+	font-size:18px;
+	color:#333;
+	padding-left:10px;
+	line-height:40px;
+	}
+.tupianliebiao li:hover .biaoti{
+		color:#C00;
+		text-decoration:underline;}
+.tupianliebiao li .miaoshu{
+	
+	height:40px;
+/*	background:#F3C;*/
+	font-size:14px;
+	color:#CCF;
+	padding-left: 10px;
+	line-height:40px;
+	}
+.tupianliebiao li:hover .miaoshu{
+		color:#C00;
+		text-decoration:underline;
+		}
 .zhbuz{
     height: 500px;
     width: 932;
@@ -33,21 +82,21 @@ img{
 }
 .zhbuy{
     height: 500px;
-    width: 272px;
+    width: 230px;
     float: right;
-    background-color: forestgreen;
+/*    background-color: forestgreen;*/
 }
 .gushiph{
     height: 290px;
     width: 260px;
-    background-color: deepskyblue;
+/*    background-color: deepskyblue;*/
     margin-left: 12px;
     
 }
 .wangzhantj{
     height: 166px;
     width: 260px;
-    background-color:darkviolet;
+/*    background-color:darkviolet;*/
     margin-left: 12px; 
 }
 .zhongbu p{
@@ -59,27 +108,27 @@ img{
 .zleft{
     height: 332px;
     width: 500px;
-    background-color: cornflowerblue;
+/*    background-color: cornflowerblue;*/
     float: left;
     
 }
 .zright{
     height: 332px;
     width: 250px;
-    background-color: chartreuse;
+/*    background-color: chartreuse;*/
     float: right;
     margin-left: 2px;
 }
 .zrs{
     height: 165px;
     width: 250px;
-    background-color: bisque;
+/*    background-color: bisque;*/
     margin-bottom: 2px;
 }
 .zrx{
     height: 165px;
     width: 250px;
-    background-color: fuchsia;
+/*    background-color: fuchsia;*/
     
 }
 .zx{
@@ -90,26 +139,26 @@ img{
 .zxz{
     height: 166px;
     width: 250px;
-    background-color: aqua;
+/*    background-color: aqua;*/
     float: left;
 }
 .zxc{
     height: 166px;
     width: 250px;
-    background-color:darkcyan;
+/*    background-color:darkcyan;*/
     float: left;
 }
 .zxy{
     height: 166px;
     width: 250px;
-    background-color:firebrick;
+/*    background-color:firebrick;*/
     float: right;
     margin-left: 2px;
 }
 .dibu{
     height: 130px;
     width: 1024px;
-    background-color: azure;
+   
 }
 .toushang{
     height: 100px;
@@ -171,7 +220,7 @@ img{
 .tscenter{
     height: 50px;
     width: 300px;
-    background-color: blueviolet;
+/*   background-color: blueviolet;*/
     float: left;
     margin-left: 200px;
     margin-top: 25px;
@@ -183,10 +232,13 @@ img{
     font-size: 20px;
     
 }
+
+    
+
 .tsright{
     height: 50px;
     width: 100px;
-   
+/*   background-color: fuchsia;*/
     float: right;
     margin-top: 50px;
     margin-right: 26px;
@@ -198,4 +250,35 @@ img{
 }
 .login a{
     color: black;
+    
+}
+.gushiliebiao{
+    text-align: center;
+}
+.wangzhan li a{
+    color: black;
+    font-size: 12px;
+}
+    
+.wangzhan{
+    text-align: center;
+}
+.gushiliebiao li a{
+    color: black;
+    font-size: 12px;
+    
+    
+}
+.lianxi{
+    height: 80px;
+    width: 200px;
+    
+  margin: auto;
+   line-height: 80px;
+    
+}
+.banquan{
+    height: 50px;
+    width: 200px;
+    margin: auto;
 }

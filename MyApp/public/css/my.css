@@ -80,6 +80,9 @@ img{
     width: 932;
     float: left;
 }
+.zhbuz img:hover{
+    border: 1px solid black;
+}
 .zhbuy{
     height: 500px;
     width: 230px;

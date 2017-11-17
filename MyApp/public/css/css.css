@@ -1,0 +1,94 @@
+*{
+	margin:0px;
+	height:0px;}
+ul,li{
+	list-style:none;}
+a{
+	text-decoration:none;}
+img{
+	border: 0px;}
+.liuyanban{
+	width:600px;
+	height:500px;
+	background:#093;
+	margin-top: 50px;
+margin-left: 500px;}
+.liuyanban .biaoti{
+	height:40px;
+	background:#06F;
+	line-height:40px;
+	text-align:center;
+	font-size:18px;
+	color:#FF0;
+	font-weight:bold;}
+.liuyanban .biaodan{
+	height:420px;
+	background:#963;
+	padding-top:40px;}
+.liuyanban .biaodan .hang{
+	height:30px;
+	background:#996;
+	margin-bottom:30px;
+	}
+.liuyanban .biaodan .hang .hangnei{
+	height:30px;
+	width:300px;
+	background:#0FF;
+	float:left;}
+.liuyanban .biaodan .hang .hangnei .wenzi{
+	width:100px;
+	height:30px;
+	background:#90F;
+	float:left;
+	text-align:right;
+	line-height:30px;
+	font-size:14px;
+	color:#C60;
+	}
+.liuyanban .biaodan .hang .hangnei .shurukuang{
+	width:200px;
+	height:30px;
+	background:#C66;
+	float:right;}
+.liuyanban .biaodan .hang .hangnei .shurukuang input{
+	height:28px;
+	width:173px;
+	border:1px solid #FC9;
+	padding-left:5px;}
+.liuyanban .biaodan .wenben{
+	height:220px;
+	background:#33C;}
+.liuyanban .biaodan .wenben .wenzi{
+	width:100px;
+	height:220px;
+	background:#90F;
+	float:left;
+	line-height:30px;
+	text-align:right;
+	color:#C60;}
+.liuyanban .biaodan .wenben .wenbenkuang{
+	width:500px;
+	height:220px;
+	float:right;
+	background:#F09;}
+.liuyanban .biaodan .wenben .wenbenkuang textarea{
+	height:208px;
+	width:488px;
+	border:1px solid #F09;
+	resize:none;
+	padding:5px;}
+.aniu{
+	height:40px;
+	background:#9C0;
+	margin-top:20px;
+	text-align:center;}
+.aniu input{
+	
+	width:140px;
+	height:40px;
+	background:#39F;
+	border:0px;
+	border-radius:5px;
+	cursor:pointer;
+	color:#C60;
+	font-size:18px;}

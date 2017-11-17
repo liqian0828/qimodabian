@@ -15,6 +15,7 @@ var video = require('./routes/vides');
 var yuyan = require('./routes/yuyan');
 var tonghua = require('./routes/tonghua');
 var xiangxi = require('./routes/xiangxi');
+var liuyan = require('./routes/liuyan');
 
 var app = express();
 
@@ -64,6 +65,7 @@ app.use('/video', video);
 app.use('/yuyan', yuyan);
 app.use('/tonghua', tonghua);
 app.use('/xiangxi', xiangxi);
+app.use('/liuyan', liuyan);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

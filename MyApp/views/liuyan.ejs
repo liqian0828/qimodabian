@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link href="css/my.css" rel="stylesheet" type="text/css"/>
+    
+</head>
+<body>
+    <div class="dakuang">
+      <div class="toubu">
+           <div class="toushang">
+               <div class="tsleft">
+                   <div class="tsls">
+                       <img src="images/logo.png" height="60" width="58">
+                   </div>
+                   <div class="tsly">
+                       <p class="p1">爱宝宝</p>
+                   </div>
+               </div>
+               <div class="tscenter">
+                  <div>
+                      <input type="text" placeholder="请输入您喜欢的名称" class="srk">
+<!--                      <img src="./images/sou.png" height="32" width="32" class="sousuo">-->
+                  </div>
+                   
+               </div>
+               <div class="tsright">
+                  <div class="login">
+                      <%if(name){%>
+                        <span><a href="#"><%= name %></a></span>
+                        <%}%>
+                        <% if(!name) { %>
+                            <span><a href="/login">登录</a></span><span>／</span><span><a href="/register">注册</a></span>
+                        <% } %>
+                  </div>
+               </div>
+           </div>
+           
+           <div class="touxia">
+               <div class="daohang">
+                <ul class="dhdh">
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/yuyan">寓言</a></li>
+                    <li><a href="/tonghua">童话</a></li>
+                    <li><a href="#">神话</a></li>
+                    <li><a href="#">留言</a></li>
+                    <li><a href="#">收藏</a></li>
+                </ul>
+               </div>
+           </div>
+       </div>
+         <div class="zhongbu1">
+         
+             <form class="liuyanban">
+    	<div class="biaoti">留言板</div>
+        <div class="biaodan">
+        	<div class="hang">
+            	<div class="hangnei">
+                	<div class="wenzi">姓名：</div>
+                    <div class="shurukuang"><input type="text" placeholder="请输入姓名"/></div>
+                </div>
+                <div class="hangnei">
+                	<div class="wenzi">电话：</div>
+                    <div class="shurukuang"><input type="text" placeholder="请输入电话"/></div>
+                </div>
+            </div>
+            <div class="hang">
+            	<div class="hangnei">
+                	<div class="wenzi">邮箱：</div>
+                    <div class="shurukuang"><input type="text" placeholder="请输入邮箱"/></div>
+                </div>
+                <div class="hangnei">
+                	<div class="wenzi">地址：</div>
+                    <div class="shurukuang"><input type="text" placeholder="请输入地址"/></div>
+                </div>
+            </div>
+            <div class="wenben">
+            	<div class="wenzi">留言：</div>
+                <div class="wenbenkuang">
+                	<textarea placeholder="请输入留言内容"></textarea>
+                </div>
+            
+            </div>
+            <div class="aniu">
+            	<input type="reset"/>
+                <input type="submit"/>
+            </div>	
+        </div>
+    </form>
+          
+       </div>
+       
+      
+          
+           
+       </div>
+       
+        
+   
+</body>
+</html>
